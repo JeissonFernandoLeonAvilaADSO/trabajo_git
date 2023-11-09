@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-log.css">
+    <script src="https://kit.fontawesome.com/2f9477c5f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__box">
+            <div class="header__side1">
+                <div class="header__log">
+                    <a href="index.html"><img src="imgs/logo.png" alt="log"></a>
+                </div>
+                <div class="header__search ">
+                    <form action="#" class="header__form --borderline --hover_style4">
+                        <input type="text" placeholder="Search..." class="header__inpt --border_none --pressed_none">
+                        <button class="header__form_btn --hover_style3 --icons_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__side2">
+                <div>
+                    <a href="login.html" class="header__btn --btn_global_style --login_style --hover_style1">Log in</a>
+                    <button href="regist.html" class="header__btn --btn_global_style --regst_style --hover_style2">Create account</button>                
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="login">
+        <form class="login__form">
+            <h1 class="login__title">Login</h1>
+            <div class="login__field">
+                <input type="email" class="login__input --active_input" placeholder="Usuario" required>
+            </div>
+            <div class="login__field">
+                <input type="password" class="login__input --active_input" placeholder="Contraseña" required>
+            </div>
+            <div class="login__field --checkbox ">
+                <input type="checkbox" class="login__checkbox " placeholder="Password" required>
+                <label for="login__input">¡Recordar datos!</label>
+            </div>
+            <div class="login__btns">
+                <div class="login__btn">
+                    <button class="header__btn --btn_global_style --regst_style3 --hover_style3 --border_none">Validar Datos</button>
+                </div>
+                <div class="login__btn">
+                    <button class="header__btn --border_none --btn_global_style --login_style3 --hover_style1">¿Olvido su contraseña?</button>
+                </div>
+            </div>
+            <span class="--underline_shdw"></span>
+            <div class="login__field">
+                <button type="submit" class="login__button --btn_global_style --regst_style --hover_style2">Regresarme al sistema</button>
+            </div>
+    
+            <a href="index.html" class="login__link --btn_global_style --regst_style --hover_style2">Volver al inicio</a>
+        </form>
+    </main>
+</body>
+</html>
