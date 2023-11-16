@@ -1,0 +1,27 @@
+/* nav{
+  background-color: brown;
+} */
+
+.pagination{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.page-item{
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.page-item:hover{
+  background-color: rgb(220, 220, 220);
+}
+
+.page-link{
+  text-decoration: none;
+  color: rgba(110,168,254,255);
+}
+
+.page-item:active{
+  border: 2px solid rgba(28,56,94,0.5);
+}
