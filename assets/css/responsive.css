@@ -38,3 +38,18 @@
     grid-template-areas: 'navbar main sidebar';
   }
 }
+
+
+@media (max-width: 1024px){
+  .navbar {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+
+  span{
+    display: none;
+  }
+
+}
