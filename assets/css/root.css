@@ -44,7 +44,18 @@
   --divider: rgb(229, 229, 229);
 
   --font-open-sans: "Open Sans", sans-serif;
+
+
+  --grid-breakP-xs: 0;
+  --grid-breakP-sm: 576px;
+  --grid-breakP-md: 768px;
+  --grid-breakP-lg: 992px;
+  --grid-breakP-xl: 1200px;
+  --grid-breakP-xxl: 1400px;
 }
+
+
+
 
 * {
   box-sizing: border-box;
