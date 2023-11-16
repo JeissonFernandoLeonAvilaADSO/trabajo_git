@@ -10,6 +10,7 @@
 @import url("helpers.css");
 @import url("responsive.css");
 @import url(components/page-set.css);
+@import url(components/alert.css);
 
 
 .login {
