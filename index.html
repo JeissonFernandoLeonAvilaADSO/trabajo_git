@@ -1,497 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/2f9477c5f5.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/helpers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__box">
-            <div class="header__side1">
-                <div class="header__log">
-                    <a href="index.html"><img src="imgs/logo.png" alt="log"></a>
-                </div>
-                <div class="header__search ">
-                    <form action="#" class="header__form --borderline --hover_style4">
-                        <input type="text" placeholder="Search..." class="header__inpt --border_none --pressed_none">
-                        <button class="header__form_btn --hover_style3 --icons_btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></path></svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="header__side2">
-                <div>
-                    <a class="header__btn --btn_global_style --login_style --hover_style1">Log in</a>
-                    <a href="regist.html" class="header__btn --btn_global_style --regst_style --hover_style2">Create account</a>                
-                </div>
-            </div>
+
+  <!-- Contenedor para el cabecero de la plantilla -->
+  <header class="header">
+    <div class="header__container">
+      <span>
+        <button class="header__hamburger display2 hidden">
+          <i class="fa fa-navicon"></i>
+        </button>
+      </span>
+      <a href="#" class="header__logo">
+        <img class="header__img mx-2" src="assets/img/logo.png" alt="logo">
+      </a>
+      <div class="header__search">
+        <form action="" role="search">
+          <div class="fields">
+            <input type="text" class="fields__text" placeholder="Buscar...">
+            <button type="submit" class="fields__button">
+              <i class="fields__icon fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="header__box">
+        <nav class="header__nav gap-1">
+          <a href="#" class="btn__search display2 mr-2">
+            <i class="fa fa-search font-size-2"></i>
+          </a>
+          <a href="login.html" class="btn btn--link btn__login">Ingresar</a>
+          <a href="register.html" class="btn">Crear cuenta</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor para el layout o plantilla -->
+  <div class="content-layout">
+    <!-- Contenedor para la sección de navegación -->
+    <div class="navbar">
+      <!-- Contenedor para el login - registro  -->
+      <div class="card p-2">
+        <div class="card__header">
+          <h1 class="card__title">¿Tienes una cuenta?</h1>
         </div>
-    </header>
-    <main class="content">
-        <div class="content__box">
-            <aside class="content__aside_lft">
-                <div class="content__as_lft_cont1">
-                    <h2>
-                        DEV Community is a community of 1,184,060 amazing developers
-                    </h2>
-                    <p class=" --marg_block">
-                        We're a place where coders share, stay up-to-date and grow their careers.
-                    </p>
-                    <div>
-                        <div class="content__as_btn --marg_block">
-                            <a href="regist.html" class="content__as_reg_btn --btn_global_style --regst_style2 --hover_style2">Create account</a>
-                            <a class="content__as_log_btn --btn_global_style --login_style2 --hover_style1">Log in</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <nav class="content__as_lft_cont2">
-                    <ul class="content__asd_nav">
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Home
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Podcast
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Videos
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Tags
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            FAQ
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Adversite on DEV
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            About
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Contact
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Guies
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Software comparisons
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="content__as_lft_cont2">
-                    <h4 class="content__cont3_txt">
-                        Other
-                    </h4>
-                    <ul class="content__asd_nav">
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Home
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Podcast
-                        </li>
-                        <li class="content__li --hover_style1">
-                            <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24">
-                            Videos
-                        </li>
-                    </ul>
-                </nav>
-                <div class="content__as_lft_cont2">
-                    <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24" class="content__cont4_icons">
-                    <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24" class="content__cont4_icons">
-                    <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24" class="content__cont4_icons">
-                    <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24" class="content__cont4_icons">
-                    <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24" class="content__cont4_icons">
-                    <img src="imgs/MdiPlusBox.svg" alt="icon" width="24" height="24" class="content__cont4_icons">
-                </div>
-                <nav class="content__as_lft_cont2">
-                    <h4 class="content__cont3_txt">
-                        Popular Tags
-                    </h4>
-                    <ul class="content__asd_nav2">
-                        <li class="content__li --hover_style1">
-                            #Home
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #webdev
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #javascript
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #programming
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #beginners
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #tutorial
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #react
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #python
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #opensource
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #devops
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #discuss
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #productivity
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #aws
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #ai
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #typescript
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #css
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #node
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #html
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #career
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #news
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #testing
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #api
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #java
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #learning
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #database
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #github
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #android
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #cloud
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #security
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #codenewbie
-                        </li>
-                        <li class="content__li --hover_style1">
-                            #frontend
-                        </li>
-
-                    </ul>
-                </nav>
-
-                <div class="content__as_lft_cont6">
-                    <img src="imgs/dark.png" alt="image2" width="208px" height="208px">
-                    <h2>
-                        Life is too short to browse without <b class="--text_edit">dark mode</b>.
-                    </h2>
-                    <p class=" --marg_block">
-                        You can customize your theme, font, and more <b class="--text_edit">when you are signed in</b>.
-                    </p>
-                </div>
-                <div class="content__as_lft_cont7">
-                    <p class=" --marg_block">
-                        <u class="content__text_underlined --text_blue --text_edit_hover">DEV Community</u> A constructive and 
-                        inclusive social network for software 
-                        developers. With you every step of 
-                        your journey.
-                    </p>
-                    <p class="--marg_block">
-                        Built on <u class="content__text_underlined --text_blue --text_edit_hover">Forem</u> — the <u class="content__text_underlined --text_blue --text_edit_hover">open source</u> 
-                        software that powers DEV and other 
-                        inclusive communities.
-                    </p>
-                    <p class="--marg_block">
-                        Made with love and<u class="content__text_underlined --text_blue --text_edit_hover">Ruby on Rails.</u>  
-                        DEV Community © 2016 - 2023.
-                    </p>
-                </div>
-            </aside>
-            <section class="content__center">
-                <nav class="content__center_nav">
-                    <ul class="content__nav_list">
-                        <li class="content__nav_li --text_edit_hover">Relevant</li>
-                        <li class="content__nav_li --text_edit_hover">latest</li>
-                        <li class="content__nav_li --text_edit_hover">Top</li>
-                    </ul>
-                </nav>
-                <div class="content__item1">
-                    <div>
-                        <a href="#" class="content__image"><img src="imgs/item1.jpg" alt="item1"></a>                        
-                    </div>
-                    <div class="content__box_itms">
-                        <div class="content__tittle">
-                            <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">17 Essential Tools to Boost Your Productivity</a>
-                        </div>
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="content__item1">
-                    <div>
-                        <a href="#" class="content__image2"><img src="imgs/item2.png" alt="item1"></a>                        
-                    </div>
-                    <div class="content__box_itms">
-                        <div class="content__tittle2">
-                            <h3>Are you a developer seeking to learn, grow, and connect with like-minded professionals in the tech industry?</h3>
-                        </div>
-                        <div class="content__text">
-                            <p>You can do so much more once you <b>create your account.</b> Follow the devs and topics you care about, and keep up-to-date.</p>
-                        </div>
-                        
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="content__item1">
-                    <div class="content__box_itms">
-                        <div class="content__tittle3">
-                            <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Creating a resume builder with NextJS, Trigger.dev and GPT4</a>
-                        </div>
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="content__item1">
-                    <div class="content__box_itms">
-                        <div class="content__tittle3">
-                            <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                        </div>
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="content__item1">
-                    <div class="content__box_itms">
-                        <div class="content__tittle3">
-                            <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Looking at the top 5 FREE Alternatives to Postman</a>
-                        </div>
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="content__item1">
-                    <div class="content__box_itms">
-                        <div class="content__tittle3">
-                            <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Set and Map in JavaScript: A Close Look</a>
-                        </div>
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="content__item1">
-                    <div class="content__box_itms">
-                        <div class="content__tittle3">
-                            <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">How it went Today?</a>
-                        </div>
-                        <div class="content__tags_box">
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag1</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag2</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag3</a>
-                            <a href="#" class="content__tag --text_decoration_none --tag_hover">#tag4</a>
-                        </div>                        
-                    </div>
-                </div>
-            </section>
-            <aside class="content__aside_rgt">
-                <div class="content__forum">
-                    <div class="content__tittle4">
-                        <h2>#discuss</h2>                    
-                    </div>
-    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="content__forum">
-                    <div class="content__tittle4">
-                        <h2>#watercooler</h2>                    
-                    </div>
-    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="content__forum">
-                    <div class="content__tittle4">
-                        <h2>#hacktoberfest23</h2>                    
-                    </div>
-    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="content__item1">
-                        <div class="content__box_itms">
-                            <div class="content__txt2 --hover_style5">
-                                <a href="#" class="--text_decoration_none --text_blue_hover --txt_black">Does an OpenAi outage have an impact on your workflow?</a>
-                                <p>2023/10/14</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-            </aside>
+        <div class="card__body">
+          <p class="card__text">
+            Ingresa con tus datos de usuario. Tambien puedes crear una cuenta en el botón crear cuenta.
+          </p>
+          <div class="grid gap-1">
+            <a href="register.html" class="btn btn--link justify-center mb-1">Ingresar</a>
+            <a href="login.html" class="btn">Crear cuenta</a>
+          </div>
         </div>
+      </div>
+      <!-- Contenedor para el menu -->
+      <nav class="navigation mt-2 mb-2 sticky">
+        <ul class="list">
+          <li class="list__item border-none">
+            <a href="#" class="list__link">
+              <i class="fa fa-home mr-1"></i><span>Inicio</span>
+            </a>
+          </li>
+          <li class="list__item border-none">
+            <a href="#" class="list__link">
+              <i class="fa fa-book-open mr-1"></i><span>Guias</span>
+            </a>
+          </li>
+          <li class="list__item border-none">
+            <a href="#" class="list__link">
+              <i class="fa fa-video-camera mr-1"></i><span>Noticias</span>
+            </a>
+          </li>
+          <li class="list__item border-none">
+            <a href="#" class="list__link">
+              <i class="fa fa-tags mr-1"></i><span>Tags</span>
+            </a>
+          </li>
+          <li class="list__item border-none">
+            <a href="#" class="list__link">
+              <i class="fa fa-address-book mr-1"></i><span>Contactenos</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Sección principal de la plantilla -->
+
+    <main class="main">
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__header">
+          <a href="#" class="card__title">
+            Titulo del post
+          </a>
+        </div>
+        <div class="card__body">
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+              quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+              impedit excepturi quia saepe adipisci dolorum?
+            </p>
+            <div class="tags">
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 1
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 2
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 3
+              </a>
+              <a href="#" class="tags__link">
+                <span class="tags__prefix">#</span>Tag 4
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
     </main>
+
+    <!-- ontenedor para la sección informativa -->
+    <aside class="sidebar">
+      <section class="card">
+        <div class="card__header">
+          <h3 class="card__title">
+            Noticias
+          </h3>
+        </div>
+        <div class="card__body">
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="list__link">
+                Lorem, ipsum dolor si
+                <div class="list__link--secundary">2023/10/14</div>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">
+                Adipisicing elit. Adipisci rerum mollitia aperiam!
+                <div class="list__link--secundary">2023/10/14</div>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">
+                Adipisicing elit. Adipisci rerum mollitia aperiam!
+                <div class="list__link--secundary">2023/10/14</div>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">
+                Adipisicing elit. Adipisci rerum mollitia aperiam!
+                <div class="list__link--secundary">2023/10/14</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+
 </body>
+
 </html>
